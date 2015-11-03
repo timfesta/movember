@@ -1,7 +1,12 @@
-<%= form_for(@user) do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.label :email %>
-<%= f.email_field :email %>
-<%= f.submit %>
-<% end %>
+<div>
+	<h1>Sign Up</h1>
+	<%= form_for(@user) do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.label :email %>
+	<%= f.email_field :email %>
+	<%= f.submit %>
+	<% end %>
+</div>
+
+

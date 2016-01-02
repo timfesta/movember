@@ -1,0 +1,4 @@
+<%= form_for :user, url: sessions_path do |f| %>
+<%= f.text_field :name, placeholder: "Name" %>	
+<%= f.email_field :email, placeholder: "Email" %>
+<% end %>

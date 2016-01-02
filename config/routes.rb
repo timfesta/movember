@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  get 'signup' => 'users#new'
-
-  get 'profile' => 'users#show'
   
+  get 'signup' => 'users#new'
+  get 'profile' => 'users#show'
   resources :users
 
-  root 'statics#index'
+  get 'login' => 'sessions#new'
+  get 'logout' => 'sessions#destroy'
+  resources :sessions
+  
+  root 'recipes#index'
 
 end
 

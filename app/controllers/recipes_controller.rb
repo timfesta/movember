@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
 	
-	def index	
+	def index
+		render :index
 	end
 end

@@ -1,9 +1,9 @@
 <div class="container">
 	<h1>Sign Up</h1><br>
 	<%= form_for @user do |f| %>
-	<%= f.text_field :name, placeholder: "Name" %><br>
-	<%= f.email_field :email, placeholder: "Email" %><br><br>
-	<%= f.submit "Sign Up" %>
+	<p><%= f.text_field :name, placeholder: "Name" %></p>
+	<p><%= f.email_field :email, placeholder: "Email" %></p>
+	<%= f.submit "Sign Up", class: "btn btn-primary" %>
 	<% end %>
 </div>
 

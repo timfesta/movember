@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
   resources :sessions
   
-  root 'recipes#index'
+  root 'users#index'
 
 end
 

@@ -12,11 +12,5 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user, :logged_in?
-
-  def authorize
-  	unless current_user
-  		redirect_to login_path
-  	end
-  end
   
 end

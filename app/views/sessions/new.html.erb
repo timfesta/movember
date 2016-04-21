@@ -1,4 +1,9 @@
-<%= form_for :user, url: sessions_path do |f| %>
-<%= f.text_field :name, placeholder: "Name" %>	
-<%= f.email_field :email, placeholder: "Email" %>
-<% end %>
+<div class="container">
+	<h1>Log In</h1>
+	<%= form_for :user, url: sessions_path do |f| %>
+	<p><%= f.text_field :name, placeholder: "Name" %></p>	
+	<p><%= f.email_field :email, placeholder: "Email" %></p>
+	<%= f.submit "Log In", class: "btn btn-primary"  %>
+	<% end %>
+</div>
+

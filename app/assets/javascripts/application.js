@@ -16,7 +16,7 @@
 //= require_tree .
 
 
-// $("#image").fadeOut(function() { 
-//   $(this).load(function() { $(this).fadeIn(5000); }); 
-//   $(this).attr("src", "./assets/northbeach.png"); 
-// });
+$("#image").fadeOut(function() { 
+  $(this).load(function() { $(this).fadeIn(5000); }); 
+  $(this).attr("src", "./assets/northbeach.png"); 
+});

@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
   resources :sessions
 
-  resources :products
+  get 'posts' => 'posts#index'
+  resources :posts
   
   root 'users#index'
 

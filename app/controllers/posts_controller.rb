@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
 	def new
 		@posts = Post.new
+		@location = Location.new
 	end
 
 	def create
@@ -17,12 +18,18 @@ class PostsController < ApplicationController
 		end
 	end
 
+
 	def show
 		@posts = Post.find(params[:id])
+		@location = Location.find(params[:id])
 	end
 
 	private
 	def post_params
 		 params.require(:post).permit(:description, :image)
+	end
+
+	def location_params
+		params.require(:location).permit(:address, :latitude, :longitude)	
 	end
 end

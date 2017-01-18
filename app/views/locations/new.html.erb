@@ -1,0 +1,9 @@
+<div>
+    <%= form_for @location do |f| %>
+    <%= f.text_field :address, placeholder: "Address" %><br>
+    <%= f.text_field :latitude, placeholder: "Latitude" %><br>
+    <%= f.text_field :longitude, placeholder: "Longitude" %><br>
+    <%= f.submit %>
+    <% end %>
+</div>
+

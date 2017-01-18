@@ -1,13 +1,19 @@
-<h2>New Post</h2>
-
-<%= form_for @posts, html: { multipart: true } do |f| %>
-
-	<%= f.label :image %>
-	<%= f.file_field :image %>
+<div class="container">
+	<center>
+		<h2>New Post</h2>
+	</center>
 	<br>
-	<%= f.label :description %>
-	<%= f.text_area :description %>
-	<br>
+	<%= form_for @posts, html: { multipart: true } do |f| %>
+	<%= f.file_field :image, placeholder: "Image" %><br>
 	<%= f.submit %>
+	<% end %>
+	<%= form_for @location do |f| %>
+	<%= f.text_field :address, placeholder: "Address" %><br>
+	<%= f.text_field :latitude, placeholder: "Latitude" %><br>
+	<%= f.text_field :longitude, placeholder: "Longitude" %><br>
+	<%= f.submit %>
+	<% end %>
 
-<% end %>
+</div>
+
+

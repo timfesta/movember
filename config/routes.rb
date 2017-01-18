@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   get 'posts' => 'posts#index'
   resources :posts
+
+  get 'locations' => 'locations#index'
+  resources :locations
   
   root 'users#index'
 
